@@ -1,0 +1,27 @@
+Sand Engine Surface app is specifically designed to provide both prediction results from the LSTM model and simulated outcomes from the Delft3D model, enabling users to make insightful comparisons based on their input configurations. To use this application effectively, certain prerequisites are essential:
+· MATLAB version 2022b or newer
+· Deep Learning Toolbox
+· Internet Connection (Optional)
+While an internet connection is recommended for downloading simulation data, the app remains fully functional even without it; only the display of simulation results will be impacted. Installation and usage instructions are demonstrated in a video (Video 1 in Supplementary Information). 
+
+Configuration Panel
+Within this Panel, user can input the configurations required by LSTM model such as: height of sand engine (m), wave height (m), tide (m), wave angle (degree). The startup window contains the 3-D plot of the sand engine which updates as the configuration is entered. After providing the configuration, user need to press Start button to begin the process of loading networks, downloading the simulation data (if internet connection is available) and predicting results using LSTM model. This process generally requires around 1 minute.
+
+Prediction Points Panel
+Upon completion of all the processes (as mentioned above), this panel displays the plot of sand engine with several points marked on it. These points correspond to specific locations where the LSTM models have the prediction results of the evolution of bathymetry. Users simply need to click on any point to view the prediction and simulation plots of that point in Bathymetry Variation panel.
+
+Bathymetry Variation Panel
+Upon clicking a specific point on the sand engine, this panel shows a comparative plot illustrating the predicted and, if downloaded, simulated evolution in bathymetry for that designated location. The application intelligently selects the simulation result that most closely aligns with the provided input configuration. Furthermore, within this panel, a table is presented, displaying the simulation configuration to enhance comprehension during the comparative analysis.
+
+Volume of Sand Remaining and Sand Engine Efficiency Panel
+Upon completion of all the process started by pressing Start button, this panel displays the predicted and simulated volumetric change of sand in the sand engine. Also, it plots the efficiency of the sand engine calculated using the time series of volume of sand remaining.
+
+Export Panel
+This panel contains options to export the results in various formats:
+· Image: This option exports plots as an image file containing plot of prediction points panel (the sand engine plot with all the marked points), plot in bathymetry variation plot and plot in volume of sand remaining and sand engine efficiency panel
+· Screenshot: This option exports the screenshot of complete window including all the plots and input and simulation configuration details.
+· Excel: This option exports the values of line plots (bathymetry evolution, sand engine remaining and efficiency) along with the configuration details into excel file.
+· MATLAB: This option exports the values of line plots (bathymetry evolution, sand engine remaining and efficiency) along with the configuration details into MATLAB file.
+
+Readme Section
+This section contains usage instructions of the app and all the simulated results. Users are prompted to input their desired configurations to access the corresponding simulation results. Upon pressing the Start button, if internet connection is available, the required simulated result will be downloaded and displayed in 3-D plot. The plot is equipped with a timeline scale, which is adjustable to facilitate a comprehensive observation of the evolving bathymetry across the simulation's time span. Within this section, a range of export options is available to users. These options allow for the export of the displayed result in various formats, including images and MATLAB files, for the plot at specific time steps. Furthermore, the section also provides the capacity to generate videos and GIFs encompassing all the time steps, enabling users to delve deeper into the dynamic evolution of the bathymetric changes.
