@@ -1,1 +1,2 @@
 # Sand_Engine_Surface
+This repository contains a MATLAB based application _SandEngineSurface_, which is a part of the manuscript "Exploring Mega-Nourishment Interventions Using Long Short-Term Memory (LSTM) Models and the Sand Engine Surface MATLAB Framework". This manuscript is submitted to journal and is currently under review. The technical specifications, usage and component description is present in "Description" file. Installation process is demonstrated in "Video1" file.
