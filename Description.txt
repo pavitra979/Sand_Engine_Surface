@@ -2,7 +2,7 @@ Sand Engine Surface app is specifically designed to provide both prediction resu
 · MATLAB version 2022b or newer
 · Deep Learning Toolbox
 · Internet Connection (Optional)
-While an internet connection is recommended for downloading simulation data, the app remains fully functional even without it; only the display of simulation results will be impacted. Installation and usage instructions are demonstrated in a video (Video 1 in Supplementary Information). 
+While an internet connection is recommended for downloading simulation data, the app remains fully functional even without it; only the display of simulation results will be impacted. Installation and usage instructions are demonstrated in a video. 
 
 Configuration Panel
 Within this Panel, user can input the configurations required by LSTM model such as: height of sand engine (m), wave height (m), tide (m), wave angle (degree). The startup window contains the 3-D plot of the sand engine which updates as the configuration is entered. After providing the configuration, user need to press Start button to begin the process of loading networks, downloading the simulation data (if internet connection is available) and predicting results using LSTM model. This process generally requires around 1 minute.
